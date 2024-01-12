@@ -94,7 +94,6 @@ limitations under the License.
         </exclusion>
       </exclusions>
     </dependency>
-<<<<<<< HEAD
     <dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -111,8 +110,6 @@ limitations under the License.
     <artifactId>json-simple</artifactId>
     <version>1.1.1</version>
     <dependency>
-=======
->>>>>>> parent of 5cf5e0c (Update Microservice)
 
   </dependencies>
 

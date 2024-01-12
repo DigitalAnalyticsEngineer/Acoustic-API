@@ -30,6 +30,12 @@ public class MicroserviceTemplateApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(MicroserviceTemplateApplication.class, args);
+
+    AcousticData api = new AcousticData();
+    JSONObject stuff = api.getData(api);
+
+    return stuff;
+
   }
 
   /** Register shutdown hook to listen for termination signal. */
