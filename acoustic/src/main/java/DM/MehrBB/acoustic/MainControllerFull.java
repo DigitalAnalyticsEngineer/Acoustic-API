@@ -1,5 +1,5 @@
-package main.java.com.cloudrun.microservicetemplate;
-
+//package gcfv2;
+package DM.MehrBB.acoustic;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -17,18 +17,22 @@ import java.net.URL;
 
 
 
-public class AcousticData {
+public class MainControllerFull {
 
  Date today = new Date();
  static Calendar cal = new GregorianCalendar();
 
 	public static void main(String[] args) throws Exception {
 
+<<<<<<< HEAD:src/main/java/com/cloudrun/microservicetemplate/AcousticData.java
         AcousticData self= new AcousticData();
 
     }
 
     public JSONObject getData(AcousticData self){
+=======
+        MainControllerFull self= new MainControllerFull();
+>>>>>>> parent of 5cf5e0c (Update Microservice):acoustic/src/main/java/DM/MehrBB/acoustic/MainControllerFull.java
         String token = self.makeAuthRequest();
 
         List<JSONObject>data3 = new ArrayList<JSONObject>();
