@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import main.java.com.cloudrun.microservicetemplate.AcousticData;
+
 /** Example REST controller to demonstrate structured logging. */
 @RestController
 public class MicroserviceController {
@@ -40,6 +42,10 @@ public class MicroserviceController {
     // Use logger with log correlation
     // https://cloud.google.com/run/docs/logging#correlate-logs
     logger.info("Structured logging example.");
-    return "Hello World!";
+
+    AcousticData api = new AcousticData();
+    JSONObject stuff = api.getData(api);
+
+    return stuff;
   }
 }

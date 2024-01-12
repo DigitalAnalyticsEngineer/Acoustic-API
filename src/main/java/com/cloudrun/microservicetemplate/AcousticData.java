@@ -1,5 +1,5 @@
-//package gcfv2;
-package DM.MehrBB.acoustic;
+package main.java.com.cloudrun.microservicetemplate;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -17,14 +17,14 @@ import java.net.URL;
 
 
 
-public class MainControllerFull {
+public class AcousticData {
 
  Date today = new Date();
  static Calendar cal = new GregorianCalendar();
 
 	public static void main(String[] args) throws Exception {
 
-        MainControllerFull self= new MainControllerFull();
+        AcousticData self= new AcousticData();
         String token = self.makeAuthRequest();
 
         List<JSONObject>data3 = new ArrayList<JSONObject>();
