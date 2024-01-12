@@ -25,6 +25,10 @@ public class AcousticData {
 	public static void main(String[] args) throws Exception {
 
         AcousticData self= new AcousticData();
+
+    }
+
+    public JSONObject getData(AcousticData self){
         String token = self.makeAuthRequest();
 
         List<JSONObject>data3 = new ArrayList<JSONObject>();
@@ -100,6 +104,7 @@ JSONObject jsonComplex = new JSONObject();
   jsonComplex.put("hasMore", "false");
 	
   System.out.println(jsonComplex);
+  return jsonComplex;
 
 }
 
