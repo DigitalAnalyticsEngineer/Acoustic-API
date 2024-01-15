@@ -41,7 +41,7 @@ public class MicroserviceTemplateApplication {
   private static final Logger logger =
       LoggerFactory.getLogger(MicroserviceTemplateApplication.class);
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception{
     SpringApplication.run(MicroserviceTemplateApplication.class, args);
 
     MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
