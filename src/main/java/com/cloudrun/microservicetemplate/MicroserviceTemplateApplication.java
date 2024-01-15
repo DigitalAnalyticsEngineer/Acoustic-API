@@ -44,10 +44,16 @@ public class MicroserviceTemplateApplication {
   public static void main(String[] args) throws Exception{
     SpringApplication.run(MicroserviceTemplateApplication.class, args);
 
-    MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
+
+    try {
+      MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
     JSONObject data = mta.getData();
 
     System.out.println(data);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    
 
   }
 
