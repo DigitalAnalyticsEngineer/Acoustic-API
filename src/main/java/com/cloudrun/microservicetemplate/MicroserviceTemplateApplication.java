@@ -46,7 +46,7 @@ public class MicroserviceTemplateApplication {
 
 
     try {
-      MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
+    MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
     JSONObject data = mta.getData();
 
     System.out.println(data);
@@ -84,7 +84,7 @@ Date today = new Date();
         List<String> data2 = new ArrayList<String>();
 
         try {
-          token = makeAuthRequest();
+          //token = makeAuthRequest();
           data2 = makeMailingsRequest(token);
           
         } catch (Exception e) {
