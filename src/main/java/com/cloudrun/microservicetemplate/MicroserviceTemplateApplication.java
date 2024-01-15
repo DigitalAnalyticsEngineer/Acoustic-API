@@ -75,12 +75,23 @@ Date today = new Date();
  static Calendar cal = new GregorianCalendar();
 
 
-    public JSONObject getData(){
-        String token = makeAuthRequest();
+    public JSONObject getData()throws Exception{
+        
 
         List<JSONObject>data3 = new ArrayList<JSONObject>();
+
+        String token = "";
+
+
+        try {
+          token = makeAuthRequest();
+          List<String>data2 = makeMailingsRequest(token);
           
-		List<String>data2 = makeMailingsRequest(token);
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+          
+		
 
 		System.out.println("POST DONE");
 
@@ -104,7 +115,16 @@ Date today = new Date();
                 
             if(!data3.contains(data2.get(j))){
 
-                String json1 = makeTrackingRequest(mailID, reportID, token);
+              String json1 = "";
+
+              try {
+                json1 = makeTrackingRequest(mailID, reportID, token);
+                
+              } catch (Exception e) {
+                e.printStackTrace();
+              }
+
+                
 
                 if(json1 != ""){
                     //System.out.println("String:"+json1+data2.get(j));
