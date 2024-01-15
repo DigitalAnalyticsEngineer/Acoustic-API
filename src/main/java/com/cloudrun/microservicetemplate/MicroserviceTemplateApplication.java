@@ -406,7 +406,7 @@ public String makeAuthRequest() throws Exception{
   }
   
   String response = responseBuffer.toString();
-  //System.out.print(response);
+  System.out.print(response);
   
   
   
