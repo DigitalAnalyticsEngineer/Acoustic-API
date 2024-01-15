@@ -81,7 +81,9 @@ Date today = new Date();
         List<JSONObject>data3 = new ArrayList<JSONObject>();
 
         String token = "";
-        List<String>data2;
+        List<String>data2 = new List<String>() {
+          
+        };
 
         try {
           token = makeAuthRequest();
