@@ -44,7 +44,7 @@ public class MicroserviceTemplateApplication {
   public static void main(String[] args) throws Exception{
     SpringApplication.run(MicroserviceTemplateApplication.class, args);
 
-
+    //while(true){}
     try {
     MicroserviceTemplateApplication mta = new MicroserviceTemplateApplication();
     JSONObject data = mta.getData();
@@ -85,7 +85,7 @@ Date today = new Date();
 
         try {
           //token = makeAuthRequest();
-          data2 = makeMailingsRequest(token);
+          //data2 = makeMailingsRequest(token);
           
         } catch (Exception e) {
           e.printStackTrace();
