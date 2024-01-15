@@ -81,11 +81,11 @@ Date today = new Date();
         List<JSONObject>data3 = new ArrayList<JSONObject>();
 
         String token = "";
-
+        List<String>data2;
 
         try {
           token = makeAuthRequest();
-          List<String>data2 = makeMailingsRequest(token);
+          data2 = makeMailingsRequest(token);
           
         } catch (Exception e) {
           e.printStackTrace();
